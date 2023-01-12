@@ -186,6 +186,10 @@ nav {
   overflow: hidden;
 }
 
+nav .container {
+  background: #f6f4f4;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +235,12 @@ nav {
 }
 
 .menu__item-link {
-  color: white;
+  font-weight: 700;
+  color: #000;
+}
+
+.menu__item-link:hover {
+  text-decoration: underline;
 }
 
 .burger {
@@ -239,9 +248,10 @@ nav {
   cursor: pointer;
 }
 
-.header__top {
+.header__top .container {
   background: #081327;
-  padding: 6px 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .header__top-wrapper {
@@ -360,6 +370,305 @@ nav {
 
 .header__top-login {
   outline: 1px solid #fff;
+}
+
+.weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  padding: 8px 22px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+          box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+}
+
+.weather__main {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.weather__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.weather__text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.hero {
+  padding: 30px 0;
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+
+.hero__blog {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "hero-blog-1 hero-blog-1 hero-blog-1 hero-blog-1 hero-blog-2 hero-blog-2" "hero-blog-3 hero-blog-3 hero-blog-3 hero-blog-4 hero-blog-4 hero-blog-4";
+}
+
+.hero__blog .hero-blog-1 {
+  grid-area: hero-blog-1;
+  background: darkred;
+}
+
+.hero__blog .hero-blog-2 {
+  grid-area: hero-blog-2;
+  background: darkblue;
+}
+
+.hero__blog .hero-blog-2 .hero__blog-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hero__blog .hero-blog-3 {
+  grid-area: hero-blog-3;
+  background: darkcyan;
+}
+
+.hero__blog .hero-blog-4 {
+  grid-area: hero-blog-4;
+  background: darkgoldenrod;
+}
+
+.hero__blog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+          box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+}
+
+.hero__blog-main {
+  color: #fff;
+  padding: 10px;
+}
+
+.hero__blog-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.hero__blog-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+
+.hero__blog-date {
+  font-size: 14px;
+}
+
+.hero__blog-views {
+  font-size: 14px;
+}
+
+.hero__aside {
+  max-width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.currency {
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+          box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+}
+
+.currency__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 8px;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.currency__text {
+  font-weight: 600;
+}
+
+.exchange {
+  padding: 0 0 8px 0;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+          box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+}
+
+.exchange__top {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 8px 8px 0 0;
+}
+
+.exchange__top-text {
+  font-weight: 600;
+  color: #fff;
+}
+
+.exchange__inday {
+  padding: 4px 8px 0 8px;
+}
+
+.exchange__wrapper {
+  padding: 0 8px;
+  margin: 8px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
+.exchange__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+
+.exchange__input {
+  outline: auto;
+  max-width: 120px;
+  width: 100%;
+  padding: 0px 5px;
+  font-size: 14px;
+}
+
+.exchange__inner-vault {
+  background: lightgray;
+  padding: 2px 8px;
+  width: 100%;
+}
+
+.exchange__sum {
+  padding: 0 8px;
+}
+
+.exchange__sum-1 {
+  font-size: 14px;
+}
+
+.exchange__sum-2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.telegram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4a3b55), to(#24335e));
+  background: -o-linear-gradient(top, #4a3b55, #24335e);
+  background: linear-gradient(180deg, #4a3b55, #24335e);
+}
+
+.telegram__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.telegram__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #fff;
+  border-radius: 10px;
+  margin: 25px 0 20px;
+  background: #58537d;
+  padding: 8px 20px;
+  max-width: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.telegram__text {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.8;
 }
 
 @media (max-width: 1449.98px) {

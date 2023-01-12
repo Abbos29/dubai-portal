@@ -3,6 +3,10 @@
 // Navbar
 nav {
     overflow: hidden;
+    
+    .container {
+        background: #f6f4f4;
+    }
 }
 
 .navbar {
@@ -12,6 +16,7 @@ nav {
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
+
 }
 
 .logo {
@@ -40,7 +45,12 @@ nav {
 
     // .menu__item-link
     &__item-link {
-        color: white;
+        font-weight: 700;
+        color: #000;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -151,8 +161,11 @@ nav {
 .header {
     // .header__top
     &__top {
-        background: #081327;
-        padding: 6px 0;
+        .container {
+            background: #081327;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
     }
     // .header__top-wrapper
     &__top-wrapper {
@@ -232,3 +245,31 @@ nav {
         
     }
 }
+
+.weather {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 22px;
+    background: #fff;
+    border-radius: 10px;
+
+    box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+
+    // .weather__main
+    &__main {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    // .weather__icon
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+    // .weather__text
+    &__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
