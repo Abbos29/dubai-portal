@@ -1,0 +1,97 @@
+.useful {
+    padding: 30px 0;
+    // .useful__top
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    // .useful__top-title
+    &__top-title {
+    }
+    // .useful__top-search
+    &__top-search {
+        padding: 10px;
+        border-radius: 8px;
+        background: #f0efef;
+        max-width: 250px;
+        width: 100%;
+    }
+    // .useful__wrapper
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 100%;
+
+        margin: 20px 0;
+    }
+    // .useful__item
+    &__item {
+        box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+        border-radius: 8px;
+        max-width: 100%;
+        width: 100%;
+        padding: 20px 25px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    // .useful__item-title
+    &__item-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    // .useful__item-btn
+    &__item-btn {
+        max-width: 100%;
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #b6a7a7;
+        color: #b6a7a7;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 20px 0;
+
+        transition: all .3s;
+        &:hover {
+            background: #b6a7a7;
+            color: #fff;
+        }
+    }
+    // .useful__item-desc
+    &__item-desc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    // .useful__item-views
+    &__item-views {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        font-size: 14px;
+        line-height: 18px;
+        color: gray;
+    }
+    // .useful__item-comments
+    &__item-comments {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        font-size: 14px;
+        line-height: 18px;
+        color: gray;
+    }
+}
