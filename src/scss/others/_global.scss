@@ -53,6 +53,14 @@ body {
     // letter-spacing: 0.3px;
 }
 
+.section-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+}
+
+
+
 // Animations
 // Fade
 @keyframes fade {
@@ -64,3 +72,5 @@ body {
         opacity: 1;
     }
 }
+
+

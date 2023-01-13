@@ -1,0 +1,121 @@
+.news {
+    padding: 20px 0;
+    // .news__wrapper
+    &__wrapper {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    // .news__inner
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    // .news__item
+    &__item {
+        a {
+            color: #000;
+
+            &:hover {
+                .news__item-title {
+                    color: purple;
+                }
+            }
+        }
+    }
+    // .news__item-date
+    &__item-date {
+        font-size: 14px;
+        color: gray;
+    }
+    // .news__item-title
+    &__item-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        margin: 8px 0;
+    }
+    // .news__item-text
+    &__item-text {
+    }
+    // .news__all
+    &__all {
+    }
+    // .news__all-link
+    &__all-link {
+        border-bottom: dashed 1px purple;
+    }
+}
+
+
+.topics {
+    max-width: 300px;
+    width: 100%;
+
+    box-shadow: 1px 2px 6px 4px rgba(34, 60, 80, 0.2);
+    padding: 18px 15px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // .topics__title
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    // .topics__item
+    &__item {
+        
+        a {
+            color: #000;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: space-between;
+        }
+    }
+    // .topics__item-img
+    &__item-img {
+        width: 70px;
+        height: 70px;
+    }
+    // .topics__item-content
+    &__item-content {
+        
+    }
+    // .topics__item-top
+    &__item-top {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        justify-content: space-between;
+
+        color: gray;
+    }
+    // .topics__item-date
+    &__item-date {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin-bottom: 4px;
+    }
+    // .topics__item-views
+    &__item-views {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        font-size: 14px;
+        line-height: 18px;
+    }
+    // .topics__item-title
+    &__item-title {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
