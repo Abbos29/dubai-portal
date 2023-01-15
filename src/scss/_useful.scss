@@ -69,29 +69,12 @@
     }
     // .useful__item-desc
     &__item-desc {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         gap: 20px;
     }
     // .useful__item-views
     &__item-views {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 4px;
-        font-size: 14px;
-        line-height: 18px;
-        color: gray;
     }
     // .useful__item-comments
     &__item-comments {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 4px;
-        font-size: 14px;
-        line-height: 18px;
-        color: gray;
     }
 }

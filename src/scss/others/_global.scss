@@ -67,10 +67,64 @@ input {
 }
 
 
-.btn-all {
-}
+
 .btn-all-link {
     border-bottom: dashed 1px purple;
+}
+.btn-forum {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    background: $mainPurple;
+    color: #fff;
+
+    border-radius: 0 0 8px 8px;
+
+    transition: all .3s;
+    &:hover {
+        background: purple;
+    }
+}
+
+
+.group {
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    // .group__icons-likes
+    &__icons-likes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        font-size: 14px;
+        line-height: 18px;
+        color: gray;
+    }
+    // .group__icons-views
+    &__icons-views {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        font-size: 14px;
+        line-height: 18px;
+        color: gray;
+    }
+    // .group__icons-comments
+    &__icons-comments {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        font-size: 14px;
+        line-height: 18px;
+        color: gray;
+    }
 }
 
 
